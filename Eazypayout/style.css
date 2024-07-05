@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: white;
+    height: 100vh;
+    box-shadow: 0px 20px 10px gray;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.balance {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 80px;
+    width: 300px;
+    box-shadow: 0px 2px 4px gray;
+}
+.balance>div{
+    display: flex;
+}
+
+.balance img {
+    margin-right: 10px;
+}
+
+.balance p {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu>button{
+   text-decoration: none;
+   outline: none; 
+   border: none;
+   padding: 10px 30px;
+   text-align: left;
+   background-color: transparent;
+   box-shadow: 0px 1px 4px gray;
+
+}
+.menu>button:hover{
+    background-color: navy;
+    color: white;
+}
+.menu>button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.menu>button a:hover{
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding-right:1000px;
+}
+thead{
+    background-color: red;
+}
+th,
+td {
+    padding:8px 0px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+th {
+    
+    text-align: left;
+    background-color: #f1f1f1;
+}
+
+td{
+    padding-right: 120px;
+}
+.data{
+    text-align: end;
+}
+.x{
+   color:#009900;
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header select {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.header select option {
+    text-align: left;
+}
+
+.container>.sidebar>.logout{
+    margin-top: 430px;
+}
+.container>.sidebar>.logout>div{
+    margin-left: 20px;
+}
+.container>.sidebar>.logout>div>a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
